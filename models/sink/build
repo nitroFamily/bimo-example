@@ -1,0 +1,3 @@
+#! /bin/bash
+g++ `itpp-config --cflags` -o exec/model1 src/main.cpp `itpp-config --libs`
+

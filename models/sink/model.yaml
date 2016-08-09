@@ -1,0 +1,9 @@
+name: sink
+category: none
+descr: model description there
+language: itpp
+source:
+- main.cpp
+libs:
+- itpp_rw
+# user-build-script: build

@@ -1,0 +1,15 @@
+user-models:
+- user-model-name: gen
+  exec-args: ["100", "247"]
+- user-model-name: coder
+  exec-args: ["100", "8"]
+- user-model-name: bsc
+  exec-args: ["100", "0.05"]
+- user-model-name: decoder
+  exec-args: ["100", "8"]
+- user-model-name: sink
+  exec-args: ["100"]
+topology:
+# - [gen, bsc, sink]
+- [gen, coder, bsc, decoder, sink]
+- [gen, sink]
